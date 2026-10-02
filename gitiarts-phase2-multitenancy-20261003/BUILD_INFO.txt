@@ -1,0 +1,44 @@
+# ============================================================
+# GitiArts Menu Platform — Phase 2 Build Info
+# ============================================================
+
+Phase number:           2
+Prompt version:          1.1 (Persian localization)
+Platform version:       5.0.5-test.5
+Generation timestamp:   2026-10-03 14:30 UTC (Gregorian)
+Generation timestamp:   ۱۴۰۵/۰۷/۱۱ ۱۸:۰۰ (Jalali, Asia/Tehran)
+LLM model used:         GLM (Z.ai)
+
+Total files:            44
+Total lines of code:    5,939
+  - src/        (PHP):  3,467
+  - tests/      (PHP): 674
+  - docs/         (MD): 610
+  - resources/ (JSON): 222
+  - migrations/ (PHP): 143
+  - scripts/    (PHP): 317
+  - root            :  506
+
+Persian localization:   ENABLED
+RTL support:            ENABLED (every HTML root requires dir="rtl" lang="fa")
+Jalali calendar:        ENABLED (pure PHP, no external library)
+Persian digits:         ENABLED (۰-۹ in all numeric UI output)
+Toman currency:         ENABLED (with Persian thousand separators)
+Iranian mobile format:  ENABLED (09XXXXXXXXX validation)
+Iranian National ID:    ENABLED (with checksum algorithm)
+Iranian postal code:    ENABLED
+
+Multi-tenancy:          ENABLED (subdomain + path routing)
+Tenant isolation:       SQLite (per-file) today, PostgreSQL (schema-per-tenant) future
+Storage abstraction:    TenantStorageInterface (driver-agnostic)
+Portability Guarantee:  ENABLED (.giti export format)
+Community Update Channel: ENABLED (UpdateClient + UpdateServer)
+Dual-mode runtime:      ENABLED (DeploymentContext: platform | standalone)
+
+PHP version target:     8.1+
+Strict types:           Every file (declare(strict_types=1))
+External dependencies:  ZERO (only ext-pdo, ext-json, ext-zip, ext-mbstring, ext-openssl)
+
+Confirmation:           Persian localization: ENABLED
+
+============================================================
